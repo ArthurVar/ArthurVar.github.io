@@ -1,0 +1,236 @@
+.tech_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 2650px;
+}
+
+.tech_main_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 88%;
+    height: 100%;
+}
+
+.tech_main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 303px;
+    top: 70px;
+    background: #211E2E;
+    box-shadow: 0px 4px 4px rgba(192, 183, 232, 0.01);
+    border-radius: 160px;
+}
+
+.tech_photo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    border-radius: 160px;
+}
+
+.tech_name {
+    position: absolute;
+    width: 577px;
+    height: 44px;
+    top: 40%;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+
+    color: #FFFFFF;
+}
+
+.tech_subname {
+    position: absolute;
+    width: 371px;
+    height: 44px;
+    top: 60%;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 44px;
+
+    color: #FFFFFF;
+}
+
+.tech_btn_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    bottom: -17%;
+    border-radius: 50%;
+
+    background: rgba(14, 14, 14, 0.32);
+}
+
+.tech_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+    font-size: 40px;
+    color: #433D60;
+    cursor: pointer;
+    z-index: 100;
+
+    background: linear-gradient(267.61deg, #C0B7E8 -0.6%, #8176AF 98.31%);
+}
+
+.tech_item_box {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+}
+
+.tech_item {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.tech_item_slider {
+    display: none;
+}
+
+@media  screen and (max-width:1100px) {
+    .tech_container {
+        top: 2900px;
+    }
+
+    .tech_btn_box{
+        display: none;
+    }
+
+    .tech_item {
+        display: none;
+    }
+
+    .tech_item_slider {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        height: 256px;
+        width: 100%;
+    }
+
+    .tech_item_sl {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 100%;
+        height: 256px;
+        top: 0;
+        opacity: 0.36;
+        overflow: hidden;
+    }
+
+    .t_prev_box {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 62px;
+        height: 62px;
+        left: -4%;
+        z-index: 1;
+        border-radius: 50%;
+
+        background: rgba(14, 14, 14, 0.32);
+    }
+
+    .t_next_box {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 62px;
+        height: 62px;
+        right: -4%;
+        z-index: 1;
+        border-radius: 50%;
+
+        background: rgba(14, 14, 14, 0.32);
+    }
+
+    .t_prev_btn {
+        position: absolute;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        font-size: 18px;
+        color: #433D60;
+
+        background: linear-gradient(267.61deg, #C0B7E8 -0.6%, #8176AF 98.31%);
+    }
+
+    .t_next_btn {
+        position: absolute;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        font-size: 18px;
+        color: #433D60;
+
+        background: linear-gradient(267.61deg, #C0B7E8 -0.6%, #8176AF 98.31%);
+    }
+}
+
+@media  screen and (max-width:700px) {
+    .tech_name {
+        position: absolute;
+        width: 257px;
+        height: 20px;
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+
+        text-align: center;
+
+        color: #FFFFFF;
+    }
+
+    .tech_subname {
+        width: 248px;
+        height: 29px;
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+
+        color: #FFFFFF;
+    }
+}
+

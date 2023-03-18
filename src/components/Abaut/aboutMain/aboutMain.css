@@ -1,0 +1,193 @@
+.aboutMain {
+    position: relative;
+    width: 88%;
+    top: 220px;
+    align-items: center;
+}
+
+.aboutMain_container {
+    position: absolute;
+    width: 100%;
+}
+
+.aboutMain_container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.about_photo_box {
+    position: absolute;
+    max-width: 524px;
+    max-height: 528px;
+    overflow: hidden;
+    background-size: cover;
+
+    background: #A3A3A3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 100px 240px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+} 
+
+.about_photo {
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    width: 100%;
+    height: 100%;
+}
+
+.about_text_container {
+    position: absolute;
+    width: 50%;
+    right: 0;
+}
+
+.about_name {
+    position: absolute;
+    width: 136px;
+    height: 44px;
+    top: 50px;
+    left: 10px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+
+    color: #FFFFFF;
+
+}
+
+.about_subname {
+    position: absolute;
+    width: 192px;
+    height: 44px;
+    top: 90px;
+    left: 10px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 44px;
+
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.about_right_text {
+    position: absolute;
+    max-width: 100%;
+    height: 228px;
+    top: 170px;
+    left: 10px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+
+    color: #FFFFFF;
+}
+
+.about_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 214px;
+    height: 48px;
+    top: 400px;
+
+    background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+    border-radius: 40px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+
+    color: #343045;
+}
+
+@media  screen and (max-width:1150px) {
+    .aboutMain {
+        top: 125px;
+    }
+
+    .aboutMain_container {
+        justify-content: center;
+    }
+
+    .about_text_container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about_photo_box {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about_name {
+        display: none;
+    }
+
+    .about_subname {
+        display: none;
+    }
+
+    .about_right_text {
+        top: 570px;
+    }
+
+    .about_btn {
+        top: unset;
+        bottom: 0;
+        width: 276px;
+        height: 56px;
+    }
+}
+
+@media  screen and (max-width:700px) {
+    .about_btn {
+        bottom: -50px;
+    }
+}
+
+@media  screen and (max-width:600px) {
+    .about_right_text {
+        top: 65%;
+    }
+
+    .about_photo_box {
+        border-radius: 80px 170px;
+    }
+}
+
+@media  screen and (max-width:480px) {
+    .about_right_text {
+        top: 55%;
+    }
+
+    .about_btn {
+        bottom: 0;
+    }
+}
+
+@media  screen and (max-width:410px) {
+    .about_right_text {
+        top: 45%;
+    }
+
+    .about_btn {
+        bottom: 40px;
+    }
+}
